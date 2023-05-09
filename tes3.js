@@ -32,14 +32,14 @@ function updateData(event) {
   event.preventDefault();
 
   const formUpdate = document.getElementById("formUpdate");
-  const index = formUpdate.index.value;
+  const dataBaru = formUpdate.index.value;
   const namaDepan = formUpdate.namaDepanUpdate.value;
   const namaBelakang = formUpdate.namaBelakangUpdate.value;
   const kelas = formUpdate.kelasUpdate.value;
 
-  siswa[index].namaDepan = namaDepan;
-  siswa[index].namaBelakang = namaBelakang;
-  siswa[index].kelas = kelas;
+  siswa[dataBaru].namaDepan = namaDepan;
+  siswa[dataBaru].namaBelakang = namaBelakang;
+  siswa[dataBaru].kelas = kelas;
 
   formUpdate.reset();
   tampilkanDataSiswa();
